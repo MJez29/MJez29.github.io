@@ -32,10 +32,12 @@ $(document).ready(function () {
     //Left Nav
     setTimeout(function () {
         $("#left").addClass("onscreen");
-    }, 1000);
+    }, 2000);
     
     resizeBG();
-    $("#bg").addClass("onscreen");
+    setTimeout(function () {
+        $("#bg").addClass("onscreen");
+    }, 1000);
 });
 
 //If the window is resized it resizes the background as well
