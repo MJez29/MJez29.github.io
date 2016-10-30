@@ -38,6 +38,10 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#bg").addClass("onscreen");
     }, 1000);
+
+    setTimeout(function () {
+        $("#bg").attr("src", "img/home.jpg");
+    }, 5000);
 });
 
 //If the window is resized it resizes the background as well
