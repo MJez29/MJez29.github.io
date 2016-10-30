@@ -1,0 +1,100 @@
+﻿/*
+    Michal Jez
+
+    Left Nav
+
+    Since all files use the same left nav the code only needs to be in 1 file, makes it easier to maintain
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#left {
+    position: fixed;
+    background-color: rgba(240, 237, 240, 0.9);
+    box-shadow: rgba(45, 45, 40, 1) 0px 0 20px;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    width: 200px;
+    z-index: 999;
+    -webkit-transition: left ease 2s !important;
+    -moz-transition: left ease 2s !important;
+    -o-transition: left ease 2s !important;
+    transition: left ease 2s !important;
+}
+
+#left.onscreen {
+    left: 0px !important;
+}
+
+#left button {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+
+#michaljez {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+#michaljez img {
+    width: 165px;
+    height: 100px;
+}
+
+#michaljez a {
+    margin-top: 10px;
+    font-size: 30px;
+    color: #2d2d28;
+    text-shadow: rgba(175, 27, 27, 0.5) 2px 2px 5px;
+    transition: text-shadow ease-in 0.25s,
+                text-decoration ease-in 0.1s;
+}
+
+#michaljez a:hover {
+    text-shadow: #af1b1b 2px 2px 5px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#left ul {
+    list-style: none;
+    
+}
+#left li {
+    text-align: center;
+    margin: 10px;
+}
+
+#left nav a {
+    font-size: 20px;
+    color: #2d2d28;
+    transition: font-size ease-out 0.25s;
+}
+#left nav a.selected {
+    text-decoration: underline;
+}
+#left nav a:hover {
+    font-size: 30px;
+}
