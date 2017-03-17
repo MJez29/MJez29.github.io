@@ -7,10 +7,18 @@ $(window).ready(function () {
         $("#about").ScrollTo();
     });
 
+    var headerul = $("#header ul");
+
     $(window).resize(function () {
         if ($(this).width() < 620)
         {
-            $("#header ul").hide();
+            headerul.hide();
+        }
+        else
+        {
+            headerul.show();
         }
     });
+
+    $(window).resize();
 });
