@@ -58,17 +58,14 @@ body
     margin: 0;
     display: inline;
     margin-right: 15px;
+    color: #FCF7F8;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#header a
+#header li:hover
 {
     color: #CED3DC;
-    text-decoration: none;
-}
-
-#header a:hover
-{
-    color: #FCF7F8;
 }
 
 #header hr
@@ -133,8 +130,8 @@ body
     width: auto;
     text-align: center;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 40px;
     font-variant:small-caps;
 }
 
@@ -146,7 +143,7 @@ body
     font-size: 16px;
     line-height: 50px;
     text-align: justify;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .invisible
@@ -171,10 +168,6 @@ body
     height: 5px;
     padding: 0;
     margin: 0;
-    /*position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 80px;*/
     border: none;
     background-color: #A31621;
 }
@@ -184,12 +177,12 @@ body
     font-size: 12px;
     padding: 0;
     margin: 0 auto;
-    padding: 100px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 #footer h1
 {
     font-size: 16px;
-    padding: 20px 0 50px 0;
+    padding: 10px 0 50px 0;
     margin: 0 auto;
 }

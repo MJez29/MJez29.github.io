@@ -13,13 +13,12 @@ $(document).ready(function () {
     var header = $("#header");
     var win = $(window);
 
-    $(window).scroll(function () {
+    win.scroll(function () {
         //$("#scroll").html($(window).scrollTop());
         var scrtop = win.scrollTop();
         var winheight = win.height();
-        
-        if (scrtop >= winheight - 65)
-        {
+
+        if (scrtop >= winheight - 65) {
             header.css({
                 position: "fixed",
                 top: "0px",
@@ -27,8 +26,7 @@ $(document).ready(function () {
             });
             header.css("background-color", "rgb(163,22,33)");
         }
-        else
-        {
+        else {
             header.css({
                 position: "absolute",
                 top: "auto",
@@ -36,5 +34,26 @@ $(document).ready(function () {
             });
             header.css("background-color", "rgba(163,22,33," + ease(scrtop / winheight) + ")");
         }
-    })
+    });
+
+    var bg = $("#home img");
+    var origWidth = 1328;
+    var origHeight = 747;
+
+    win.resize(function () {
+        var winw = win.width();
+        var winh = win.height();
+
+        //Scale horizontally to just fit, crop vertically
+        if (winw / origWidth * origHeight >= winh)
+        {
+            bg.width(winw);
+            bg.height(winw / origWidth * origHeight);
+        }
+        else if (winh / origHeight * origWidth >= winw)
+        {
+            bg.width(winh / origHeight * origWidth);
+            bg.height(winh);
+        }
+    });
 });
