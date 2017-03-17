@@ -1,45 +1,42 @@
-﻿<!DOCTYPE html>
-
-<html lang="en">
+﻿<html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Hey I'm Michal Jez - A hard working student with a passion for software development" />
-        <meta name="keywords" content="michal, jez" />
-        <meta http-equiv="author" content="Michal Jez" />
-        <title>Michal Jez - Home</title>
-        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-        <link rel="stylesheet" href="left.css" type="text/css" />
-        <link rel="stylesheet" href="index.css" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata">
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="index.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Michal Jez</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Crete Round' rel='stylesheet'>
+        <link rel="stylesheet" href="index.css" />
+        <script src="jquery-3.2.0.js"></script>
+        <script src="home.js"></script>
     </head>
     <body>
-        <img id="bg" src="img/home-scaled.jpg" alt="A background picture taken from 300 ft overlooking a lake and islands" />
-        <img src="img/home.jpg" style="display: none;" />
-        <div id="left">
-            <div id="michaljez">
-                <img id="mj" src="img/mj.png" alt="My logo (an M and a J)" />
-                <br />
-                <a id="home" href="">Michal Jez</a>
-            </div>
-            <nav>
+        
+        <div id="home">
+            <img src="img/home.jpg" alt="A nice view" />
+            <div id="header">
+                <h1>Michal Jez</h1>
                 <ul>
-                    <li>
-                        <a href="about">About</a>
-                    </li>
-                    <li>
-                        <a href="portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/MJez29" target="_blank">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="contact">Contact</a>
-                    </li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li id="scroll"></li>
                 </ul>
-            </nav>
+                <hr />
+            </div>
+        </div>
+        <div id="about">
+            <h1>Hey There!</h1>
+            <p>
+                I'm Michal Jez, a high school student with a passion for programming, hockey and Clash of Clans.
+                Amidst a packed school schedule I still make time for developing underappreciated yet nonetheless amazing side projects and to lace up the pads for a game of pickup hockey.
+            </p>
+        </div>
+        <div id="footer">
+            <hr />
+            <h2>Give yourself a pat on the back, you made it to the end!</h2>
+            <h1>© Michal Jez with ♥. Special thanks to coffee.</h1>
         </div>
     </body>
 </html>

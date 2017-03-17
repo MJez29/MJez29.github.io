@@ -1,67 +1,195 @@
-﻿/*
-    Michal Jez
-
-    Stylesheet for Home page
-*/
-
-* {
-    margin: 0;
+body
+{
     padding: 0;
+    margin: 0;
+    font-family: 'Crete Round';
+    overflow-x: hidden;
 }
 
-html, body {
-    height: 100%;
+.left
+{
+    float: left;
 }
 
-body {
-    z-index: -1;
+.right
+{
+    float: right;
 }
 
-#bg {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    z-index: 0;
-    opacity: 0;
-    transition: opacity ease-in-out 5s;
-}
-
-#bg.onscreen {
-    opacity: 1 !important;
-}
-
-#right {
-    position: fixed;
-    left: 200px;
-    top: 0px;
+#header
+{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
     width: auto;
-    height: 100%;
+    height: 60px;
+
+    background-color: rgba(163,22,33,0);
+    margin: 0;
 }
 
-#greeting {
-    z-index: 999;
-    width: 80%;
-    min-width: 80%;
-    margin:  auto;
-    overflow: initial;
+#header h1
+{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    font-size: 45px;
+    color: #FCF7F8;
 }
 
-#greeting h1, #greeting h2 {
-    z-index: 999;
-    font-family: Roboto;
-    font-weight: normal;
+#header ul
+{
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 15px);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-#greeting h1 {
-    color: #af1b1b;
-    font-size: 50px;
+#header li
+{
+    padding: 0;
+    margin: 0;
+    display: inline;
+    margin-right: 15px;
+}
+
+#header a
+{
+    color: #CED3DC;
+    text-decoration: none;
+}
+
+#header a:hover
+{
+    color: #FCF7F8;
+}
+
+#header hr
+{
+    background-color: #4E8098;
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* --- HOME --- */
+
+#home
+{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#home img
+{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* --- ABOUT --- */
+
+#about
+{
+    background-color: #CED3DC;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#about img
+{
+    position: absolute;
+    top: calc(150vh - 100px);
+    left: calc(25% - 200px);
+    padding: 0;
+    margin: 0;
+    border: 5px solid #FCF7F8;
+    border-radius: 100px;
+}
+
+#about h1
+{
+    padding: 0;
+
+    color: #A31621;
+    font-size: 40px;
+
+    width: auto;
     text-align: center;
-    text-shadow: #2d2d28 2px 2px 2px;
-    padding: 10px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-variant:small-caps;
 }
 
-#greeting h2 {
-    color: #2d2d28;
+#about p
+{
+    color: #4E8098;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 50px;
     text-align: justify;
+    padding-bottom: 50px;
+}
+
+.invisible
+{
+    display: none;
+}
+
+#footer
+{
+    background-color: #4E8098;
+    color: #FCF7F8;
+    font-weight: lighter;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+#footer hr
+{
+    height: 5px;
+    padding: 0;
+    margin: 0;
+    /*position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;*/
+    border: none;
+    background-color: #A31621;
+}
+
+#footer h2
+{
+    font-size: 12px;
+    padding: 0;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+}
+
+#footer h1
+{
+    font-size: 16px;
+    padding: 20px 0 50px 0;
+    margin: 0 auto;
 }
