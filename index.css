@@ -68,6 +68,13 @@ body
     color: #CED3DC;
 }
 
+#header a
+{
+    color: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
 #header hr
 {
     background-color: #4E8098;
