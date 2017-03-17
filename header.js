@@ -8,9 +8,10 @@ $(window).ready(function () {
     });
 
     var headerul = $("#header ul");
+    var headerh1 = $("#header h1");
 
     $(window).resize(function () {
-        if ($(this).width() < 620)
+        if ($(this).width() < headerul.width() + headerh1.width() + 30)
         {
             headerul.hide();
         }
