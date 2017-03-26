@@ -26,9 +26,13 @@ var projects = [
         )
 ];
 
-
+var proj;           //The currents index of projects
 
 $(window).ready(function () {
+    proj = 0;
+
+
+
     var i = 0;
     $("#projects img:not(.fg)").attr("src", projects[i].src);
     $("#proj-info h3").html(projects[i].name);
