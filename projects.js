@@ -38,6 +38,7 @@ $(window).ready(function () {
 
     var i = 1;
     $("#projects img").attr("src", projects[i].src);
+    $("#projects a").attr("href", projects[i].link);
     $("#projects h3").html(projects[i].name);
     $("#projects h3").css("color", projects[i].col);
     $("#projects p").html(projects[i].description);

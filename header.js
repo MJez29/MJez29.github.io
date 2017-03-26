@@ -11,6 +11,10 @@ $(window).ready(function () {
         $(window).scrollTo($("#projects"), 500);
     });
 
+    $("#header li.contact").click(function () {
+        $(window).scrollTo($("#contact"), 500);
+    });
+
     var headerul = $("#header ul");
     var headerh1 = $("#header h1");
 
