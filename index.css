@@ -222,6 +222,7 @@ hr
     border: 2px solid #A31621;
     box-shadow: 5px 5px 5px black;
     position: relative;
+    overflow: hidden;
 }
 
 #proj img
