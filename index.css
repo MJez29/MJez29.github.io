@@ -243,31 +243,34 @@ hr
     max-width: 100vw;
 }
     */
-#proj-info h3
+
+#proj h3
 {
     position: absolute;
-    bottom: 65px;
-    left: 0;
+    bottom: 29px;
+    left: 5px;
     padding: 0;
     margin: 0;
-    width: 100%;
     max-width: 100vw;
     color: #FCF7F8;
     font-size: 4ch;
 }
 
-#proj-info p
+#proj p
 {
     position: absolute;
-    left: 0;
+    left: 5px;
     bottom: 5px;
     font-size: 16px;
-    width: 60%;
+    padding: 0;
+    margin: 0;
     max-width: 100vw;
-    height: 45px;
+    height: 24px;
     color: white;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #4E8098;
+    border: 2px solid gray;
 }
 
 /* --- CONTACT --- */
@@ -280,8 +283,6 @@ hr
     margin: 0;
     background-image: url(img/simple.png);
     box-shadow: 0 -5px 10px black;
-    padding: 0;
-    margin: 0;
 }
 
 #contact h1
@@ -296,19 +297,29 @@ hr
 
 #contact ul
 {
-    width: 80vh;
+    width: calc((10vh + 50px) * 3);
     list-style: none;
+    max-width: 80vh;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 #contact ul li 
 {
     display: inline;
+    margin: 0 20px;
 }
 
 #contact ul img
 {
     width: 10vh;
     height: 10vh;
+    transition: transform ease 0.4s;
+}
+
+#contact ul img:hover 
+{
+    transform: scale(1.2);
 }
 
 /* --- FOOTER --- */
