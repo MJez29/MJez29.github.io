@@ -7,6 +7,10 @@ $(window).ready(function () {
         $(window).scrollTo($("#about"), 500);
     });
 
+    $("#header li.projects").click(function () {
+        $(window).scrollTo($("#projects"), 500);
+    });
+
     var headerul = $("#header ul");
     var headerh1 = $("#header h1");
 

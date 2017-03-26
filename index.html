@@ -10,23 +10,25 @@
         
         <link href='https://fonts.googleapis.com/css?family=Crete Round' rel='stylesheet'>
         <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="animate.min.css" />
         <script src="jquery-3.2.0.js"></script>
         <script src="jquery.scrollTo.js"></script>
         <script src="header.js"></script>
         <script src="home.js"></script>
+        <script src="projects.js"></script>
     </head>
     <body>
         
         <div id="home">
             <img src="img/home.jpg" alt="A nice view" />
             <div id="header">
-                <h1>Michal Jez</h1>
-                <ul>
+                <h1 class="animated fadeInUp">Michal Jez</h1>
+                <ul class="animated fadeInUp">
                     <li class="about"><a href="javascript: void(0);">About me</a></li>
-                    <li>Projects</li>
+                    <li class="projects">Projects</li>
                     <li>Contact</li>
                 </ul>
-                <hr />
+                <hr class="animated fadeInUp" />
             </div>
         </div>
         <div id="about">
@@ -36,10 +38,29 @@
                 Amidst a packed school schedule I still make time for developing underappreciated yet nonetheless amazing side projects and to lace up the pads for a game of pickup hockey.
             </p>
         </div>
+        <div id="projects">
+            
+            <h1>Check Out What I've Made!</h1>
+            <h2>These are my favourites. If you want to see them all they're right over <a>here</a></h2>
+            <div id="proj">
+                <img src="" alt="A project of mine" />
+                <div id="proj-info">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Want to Get In Touch?</h1>
+            <ul>
+                <li><a href="mailto:Michal.G.Jez@gmail.com"><img src="https://simpleicons.org/icons/gmail.svg"/></a></li>
+            </ul>
+        </div>
         <div id="footer">
             <hr />
             <h2>Give yourself a pat on the back, you made it to the end!</h2>
             <h1>© Michal Jez with ♥. Special thanks to coffee.</h1>
         </div>
+        
     </body>
 </html>

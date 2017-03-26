@@ -5,6 +5,13 @@ body
     font-family: 'Crete Round';
     overflow-x: hidden;
 }
+hr
+{
+    padding: 0;
+    margin: 0;
+    height: 5px;
+    border: none;
+}
 
 .left
 {
@@ -27,6 +34,8 @@ body
 
     background-color: rgba(163,22,33,0);
     margin: 0;
+
+    z-index: 999;
 }
 
 #header h1
@@ -70,9 +79,13 @@ body
 
 #header a
 {
-    color: inherit;
-    font-size: inherit;
-    text-decoration: inherit;
+    color: #FCF7F8;
+    text-decoration: none;
+}
+
+#header a:hover
+{
+    color: #CED3DC;
 }
 
 #header hr
@@ -80,12 +93,8 @@ body
     background-color: #4E8098;
     position: absolute;
     bottom: -5px;
-    height: 5px;
     left: 0;
     right: 0;
-    padding: 0;
-    margin: 0;
-    border: none;
 }
 
 /* --- HOME --- */
@@ -114,6 +123,8 @@ body
     height: auto;
     padding: 0;
     margin: 0;
+    background-image: url(img/simple.png);
+    box-shadow: 0 5px 10px black;
 }
 
 #about img
@@ -159,6 +170,136 @@ body
     display: none;
 }
 
+/* --- PROJECTS --- */
+
+#projects
+{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#projects hr
+{
+    background-color: #4E8098;
+}
+
+#projects>img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: /*190px*/0;
+    z-index: -999;
+}
+
+#projects h1
+{
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    color: #A31621;
+    padding: 50px 0 10px 0;
+}
+
+#projects h2
+{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: lighter;
+}
+
+#proj
+{
+    width: 60vw;
+    height: calc(60vw * 9 / 16);
+    padding: 0;
+    margin: 50px auto;
+    border: 2px solid #A31621;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    max-width: 100vw;
+}
+
+#proj img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#proj-info
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    max-height: 80%;
+    color: #4E8098;
+}
+
+#proj-info h3
+{
+    padding: 0;
+    margin: 0;
+   
+    font-size: 40px;
+}
+
+#proj-info p
+{
+    padding: 5px; 
+    margin: 0;
+    color: #A31621;
+}
+
+/* --- CONTACT --- */
+
+#contact
+{
+    background-color: #CED3DC;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-image: url(img/simple.png);
+    box-shadow: 0 -5px 10px black;
+    padding: 0;
+    margin: 0;
+}
+
+#contact h1
+{
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    color: #A31621;
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+#contact ul
+{
+    width: 80vh;
+    list-style: none;
+}
+
+#contact ul li 
+{
+    display: inline;
+}
+
+#contact ul img
+{
+    width: 10vh;
+    height: 10vh;
+}
+
+/* --- FOOTER --- */
+
 #footer
 {
     background-color: #4E8098;
@@ -173,10 +314,6 @@ body
 
 #footer hr
 {
-    height: 5px;
-    padding: 0;
-    margin: 0;
-    border: none;
     background-color: #A31621;
 }
 
