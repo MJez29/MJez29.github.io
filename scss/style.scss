@@ -163,18 +163,37 @@ header {
 
 .timeline-img-header {
 	position: relative;
-	margin-bottom: 20px;
+	overflow: hidden;
 	width: 100%;
 
 	h2 {
 		color: $primary-text;
 		position: absolute;
-		bottom: 5px;
 		left: 20px;
+		bottom: 0;
+		margin: 0;
+		transition: opacity ease-out 0.2s;
+		z-index: 999;
 	}
 	
 	img {
 		width: inherit;
+		filter: blur(5px) brightness(100%);
+		margin: -5px auto;
+		transform: scale(2);
+		transition-property: filter, transform;
+		transition-timing-function: ease-out;
+		transition-duration: 0.2s;
+	}
+
+	&:hover {
+		img {
+			filter: none;
+			transform: scale(1);
+		}
+
+		h2 {
+		}
 	}
 }
 
@@ -274,7 +293,7 @@ blockquote {
 .timeline-item .timeline-content.timeline-card {
 	padding: 0 0 30px;
 
-	p, ul {
+	p, ul, h2 {
 		padding: 0 20px;
 	}
 
