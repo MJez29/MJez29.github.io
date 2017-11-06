@@ -1,0 +1,52 @@
+@keyframes fold {
+    from {
+        transform: scale(1, 1);
+        height: initial;
+    }
+    to {
+        transform: scale(1, 0);
+    }
+}
+
+.fold {
+    animation-name: fold;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: 50% 0%;
+
+}
+
+* {
+    font-family: 'Roboto Mono', monospace;;
+    font-size: 1em;
+}
+
+body {
+    background-color: rgb(47, 30, 46);
+    font-size: 1.4em;
+}
+
+#terminal-container {
+    margin-top: 40vh;
+    margin-left: calc(50vw - 250px);
+    width: 500px;
+    border: 1px solid white;
+    color: white;
+}
+
+#terminal {
+    padding: 20px;
+}
+
+pre {
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+
+.hidden {
+    display: none;
+}

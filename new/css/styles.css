@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #2f1e2e;
+}
+
+* {
+    color: #a39e9b;
+}
+
+.method-name {
+    color: #ef6155;
+}
+
+.attr {
+    color: #ef6155;
+}
+
+.class-name {
+    color: #fec418;
+}
+
+.comment {
+
+}
+
+.string {
+    color: #48b685;
+}
+
+.operator {
+    color: #4271ae;
+}
+
+.keyword {
+    color: #815ba4;
+}
