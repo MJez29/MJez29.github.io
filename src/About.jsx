@@ -83,15 +83,11 @@ class About extends Component {
                                     {comment("// 7/10")}
 
                                     <br/>
+                                    
                                     {string(`"Git"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     {comment("// 5/10")}
 
-                                    <br/>
-
-                                    {string(`"Yelp API`)},
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("// 9/10")}
                                     <br/>
 
                                     {string(`"Unity3D"`)},
@@ -105,9 +101,16 @@ class About extends Component {
                                     {comment("// 7/10")}
 
                                     <br/>
+
                                     {string(`"React.js"`)}
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     {comment("// 6/10")}
+
+                                    <br/>
+
+                                    {string(`"Yelp API`)},
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 9/10")}
                                     <br/>
                                 </div>
                                 ]
