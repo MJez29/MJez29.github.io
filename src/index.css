@@ -1,0 +1,25 @@
+* {
+  font-family: "Roboto", monospace;
+  color: #a39e9b;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f1e2e;
+}
+
+.tab {
+  padding-left: 4ch;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.5em auto;
+}
+
+h2 {
+  margin: 0.2em auto;
+}

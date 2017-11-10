@@ -1,0 +1,27 @@
+.comment {
+    color: #8d8687;
+}
+
+.keyword {
+    color: #815ba4;
+}
+
+.string {
+    color: #48b685;
+}
+
+.operator {
+    color: #6896ba;
+}
+
+.field {
+    color: #f99b15;
+}
+
+.object {
+    color: #fec418;
+}
+
+.attr {
+    color: #ef6155;
+}

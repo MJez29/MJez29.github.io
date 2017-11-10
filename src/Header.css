@@ -1,0 +1,31 @@
+.pure-menu {
+    background-color: #2f1e2e;
+    box-shadow: 0 25px 50px #2f1e2e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.pure-menu-link {
+    color: #FFFFFF;
+}
+
+.pure-menu-link {
+    padding: 10px;
+    font-size: 2em;
+    margin: 0 5px;
+}
+
+a.pure-menu-link {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.pure-menu-link:hover {
+    background-color: none;
+    background-color: #2f1e2e;
+}
+
+.pure-menu-list {
+    float: right;
+}
