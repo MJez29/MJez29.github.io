@@ -83,7 +83,7 @@ class About extends Component {
                                     {comment("// 7/10")}
 
                                     <br/>
-                                    
+
                                     {string(`"Git"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     {comment("// 5/10")}
@@ -104,7 +104,7 @@ class About extends Component {
 
                                     {string(`"React.js"`)}
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("// 6/10")}
+                                    {comment("// 4/10")}
 
                                     <br/>
 
