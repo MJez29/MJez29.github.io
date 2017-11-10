@@ -73,18 +73,41 @@ class About extends Component {
                             {attr("frameworks")}: [
                                 <div className="tab">
                                     {string(`"Node.js"`)}
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 7/10")}
+
                                     <br/>
+
                                     {string(`"Express.js"`)},
+                                    &nbsp;&nbsp;
+                                    {comment("// 7/10")}
+
                                     <br/>
                                     {string(`"Git"`)},
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 5/10")}
+
                                     <br/>
+
                                     {string(`"Yelp API`)},
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 9/10")}
                                     <br/>
+
                                     {string(`"Unity3D"`)},
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 6/10")}
+
                                     <br/>
+
                                     {string(`"Angular.js"`)},
+                                    &nbsp;&nbsp;
+                                    {comment("// 7/10")}
+
                                     <br/>
                                     {string(`"React.js"`)}
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {comment("// 6/10")}
                                     <br/>
                                 </div>
                                 ]
