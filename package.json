@@ -15,7 +15,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && git subtree push --prefix build origin master"
   },
-  "homepage": "https://mjez29.github.io/build",
+  "homepage": "https://mjez29.github.io",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }

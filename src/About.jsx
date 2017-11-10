@@ -6,7 +6,6 @@ class About extends Component {
         return (
             <div className="tab">
                 <br/><br/><br/><br/><br/><br/>
-                Test
                 <h1>
                     {object("MichalJez")}.{field("about")} {operator("=")} {"{"}
                 </h1>
