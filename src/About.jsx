@@ -5,14 +5,13 @@ class About extends Component {
     render() {
         return (
             <div className="tab">
-                <br/><br/><br/><br/><br/><br/>
                 <h1>
                     {object("MichalJez")}.{field("about")} {operator("=")} {"{"}
                 </h1>
-                <div className="tab">
+                <div className="tab tab-right">
                     <h2>
                         {attr("desc")}: {string("`")}
-                            <div className="tab">
+                            <div className="tab justify">
                                 {string(`
                                     Hey, I'm Michal! I fell in love with programming in high school and haven't
                                     stopped coding since then. Feel free to check out anything I've made!
@@ -30,39 +29,39 @@ class About extends Component {
                                 <div className="tab">
                                     {string(`"Javascript"`)},
                                     &nbsp;&nbsp;
-                                    {comment("//")} &nbsp;{comment("10/10")}
+                                    {comment("//")}&nbsp;{comment("8/10")}
 
                                     <br/>
 
                                     {string(`"Java"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment(`//`)} &nbsp; {comment("6/10")}
+                                    {comment(`//`)}&nbsp;{comment("6/10")}
 
                                     <br/>
 
                                     {string(`"C#"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("//")} &nbsp; {comment("8/10")}
+                                    {comment("//")}&nbsp;{comment("6/10")}
                                     <br/>
 
                                     {string(`"C++`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("//")} &nbsp; {comment("7/10")}
+                                    {comment("//")}&nbsp;{comment("7/10")}
                                     <br/>
 
                                     {string(`"C"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("//")} &nbsp; {comment("7/10")}
+                                    {comment("//")}&nbsp;{comment("7/10")}
                                     
                                     <br/>
                                     {string(`"Python"`)},
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("//")} &nbsp; {comment("9/10")}
+                                    {comment("//")}&nbsp;{comment("9/10")}
 
                                     <br/>
                                     {string(`"Typescript"`)}
                                     &nbsp;&nbsp;&nbsp;&nbsp;
-                                    {comment("//")} &nbsp; {comment("8/10")}
+                                    {comment("//")}&nbsp;{comment("8/10")}
                                     <br/>
                                 </div>
                                 ],

@@ -36,3 +36,9 @@ export function attr(str) {
         <span className="attr">{str}</span>
     )
 }
+
+export function keyword(str) {
+    return (
+        <span className="keyword">{str}</span>
+    )
+}

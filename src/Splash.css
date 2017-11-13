@@ -1,0 +1,19 @@
+.jumbo {
+    margin-top: 40vh;
+    text-align: center;
+    margin-bottom: 40vh;
+}
+
+.left {
+    text-align: left;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.jumbo h1 {
+    font-size: 6em;
+}
+
+.jumbo h2 {
+    font-size: 4em;
+}

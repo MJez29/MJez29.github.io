@@ -12,14 +12,41 @@ body {
 }
 
 .tab {
-  padding-left: 4ch;
+  padding-left: 2ch;
+}
+
+.tab-right {
+  padding-right: 2ch;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 1.5em;
   margin: 0.5em auto;
 }
 
 h2 {
+  font-size: 1em;
   margin: 0.2em auto;
+}
+
+.justify { 
+  text-align: justify;
+}
+
+@media screen and (min-width: 64em) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .tab, .tab-md {
+    padding-left: 4ch;
+  }
+
+  .tab-right {
+    padding-right: 4ch;
+  }
 }
